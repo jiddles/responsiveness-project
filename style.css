@@ -1,0 +1,204 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCFDF2;
+  text-align: center;
+  color: #7743DB;
+  font-family: 'Square Peg', cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p , li{
+  font-size: 1.5rem;
+  font-family: 'Junge', serif;  margin: 0;
+}
+
+.about {
+  width: 98%;
+  text-align: center;
+  margin: 1%;
+}
+
+#head {
+  width: 100%;
+  background-color: #FFE9B1;
+  text-align: left;
+}
+
+#head a {
+  text-decoration: none;
+  padding-left: 1%;
+}
+
+.tab {
+  color: #3B3486;
+  display: inline;
+}
+
+hr {
+  visibility: hidden;
+}
+
+.brand {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.banner  img{
+  width: 100%;
+  margin: 0;
+  border-style: hidden;
+  object-fit: cover;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.card{
+  display: block;
+  width: 100%;
+  background-color: #FFE9B1;
+  border-radius: 10px;
+  float: left;
+  margin: 1%;
+}
+.contact {
+  text-align: left;
+}
+
+.card > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1%;
+
+}
+
+.card > p {
+  margin: 1%
+}
+
+.carousel {
+  margin: 0;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide > img {
+  display: block;
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0,0,0, .2);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0,0,0, .4);
+}
+
+.carousel-button:focus {
+  outline: 2px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+@media (max-width:768px) {
+  body, .carousel-button{
+    font-size: 1.3rem;
+  }
+  p , li{
+    font-size: 1rem;
+  }
+  .tab {
+    font-size: .5rem;
+  }
+}
+@media (min-width: 769px) and (max-width:1024px) {
+  body, .carousel-button{
+    font-size: 1.5rem;
+  }
+  p, li {
+    font-size: 1.2rem;
+  }
+  .tab {
+    font-size: .7rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 2.7rem;
+  }
+  p, li, .carousel-button {
+    font-size: 2.2rem;
+  }
+  .tab {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1441px) {
+  body, .carousel-button {    
+    font-size: 4rem;
+  }
+  p, li {
+    font-size: 2.2rem;
+  }
+  .tab {
+    font-size: 1.5rem;
+  }
+}
